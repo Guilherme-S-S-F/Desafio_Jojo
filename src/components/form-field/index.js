@@ -2,11 +2,8 @@ import { useState } from 'react';
  import './style.css';
  
  export function FormField(props) {
-    console.log(props.index,props.check)
-    var [checked, setChecked] = useState(props.check);
 
     const selectField = () => {
-        setChecked(!checked);
         props.selected(props.index);
     }
 
@@ -16,7 +13,7 @@ import { useState } from 'react';
             <p>{props.text}</p>
             <div class="checkbox-wrapper-12">
             <div class="cbx">
-                <input id="cbx-12" type="checkbox" checked={checked}/>
+                <input id="cbx-12" type="checkbox" checked={props.check}/>
                 <label for="cbx-12"></label>
                 <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
                 <path d="M2 8.36364L6.23077 12L13 2"></path>
