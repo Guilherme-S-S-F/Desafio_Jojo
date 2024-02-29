@@ -1,9 +1,16 @@
 .card {
-    background-color: rgb(193, 193, 193);
-    padding: 15px;
-    min-width: 1024px;
-    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: rgb(211, 156, 232);
+    padding: 10px 30px 30px 30px;
+    width: 96%;
+    max-width: 1024px;
+    border-radius: 20px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
 }
+
+
 
 .fields {
     display: flex;

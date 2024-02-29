@@ -1,14 +1,17 @@
 
 
 .field {
-    width: 95%;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-    background-color: aliceblue;
-    padding: 5px 10px 
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    font-weight: 400;
 }
 
 
