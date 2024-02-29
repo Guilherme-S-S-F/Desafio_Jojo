@@ -8,17 +8,15 @@ function App() {
     <div className="App">
       <h1 className='title'>Quiz Jojo's Stand</h1>
       <div className='form-area'>
-        <FormCard answers={["1","2","3","4","5"]} question="teste de pergunta e tamanho do p no cardteste de pergunta e tamanho do p no cardteste de pergunta e tamanho do p no cardteste de pergunta e tamanho do p no card">
+        <FormCard answers={["Azul.","Vermelho.","Branco.","Amarelo.","Roxo."]} question="Qual sua Cor favorita?">
         </FormCard>
 
-        <FormCard answers={["1","2","3","4","5"]} question="teste de pergunta e tamanho do p no card">
+        <FormCard answers={["Velocidade.","Fogo.","Super Resistência.","Parar o tempo.","Clarividência."]} question="Escolha um poder:">
         </FormCard>
 
-        <FormCard answers={["1","2","3","4","5"]} question="teste de pergunta e tamanho do p no card">
+        <FormCard answers={["Pizza","Massa","Croissant","Churrasco","Salada"]} question="Escolha um prato">
         </FormCard>
 
-        <FormCard answers={["1","2","3","4","5"]} question="teste de pergunta e tamanho do p no card">
-        </FormCard>
       </div>
 
     </div>
