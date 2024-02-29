@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <h1 className='title'>Quiz Jojo's Stand</h1>
       <div className='form-area'>
+        
       </div>
     </div>
   );
