@@ -1,19 +1,25 @@
-
+import {useState} from 'react';
  import './style.css';
  
  export function FormField(props) {
-    let check = false
-    const selectField = () => {
-        check = (check) ? false : true
+    var [checked, setChecked] = useState(false);
+
+    const selectField = (event) => {
+        checked = (checked) ? false : true;
+        onSave(checked)
+    }
+
+    const onSave = (value) => {
+        setChecked(value);
     }
 
     return(
-        <div className='field' onclick={selectField}>
+        <div className='field' onClick={selectField}>
             <h3>{props.index}</h3>
             <p>{props.text}</p>
             <div class="checkbox-wrapper-12">
             <div class="cbx">
-                <input id="cbx-12" type="checkbox" checked={check}/>
+                <input id="cbx-12" type="checkbox" checked={checked}/>
                 <label for="cbx-12"></label>
                 <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
                 <path d="M2 8.36364L6.23077 12L13 2"></path>
