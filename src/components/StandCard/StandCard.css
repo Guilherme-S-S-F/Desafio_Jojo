@@ -1,0 +1,16 @@
+.stand-card {
+    margin: 40px;
+    border-radius: 8px;
+    background-color: #FFF;
+    height: 400px;
+}
+
+.stand-card .image {
+    object-fit: cover;
+}
+
+.stand-card .image img {
+    object-fit: cover;    
+    width: 300px;
+    border-radius: 8px 8px 0 0;
+}

@@ -1,4 +1,5 @@
 import './App.css';
+import StandCard from './components/StandCard';
 import { FormField } from './components/form-field';
 import { FormCard } from './components/form-field-card';
 
