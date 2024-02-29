@@ -5,11 +5,11 @@ import { FormCard } from './components/form-field-card';
 function App() {
   return (
     <div className="App">
-      <FormCard>
-      <FormField texto="teste de alternativa" indice="A" />
-      <FormField texto="outro de alternativa" indice="B" />
-      <FormField texto="ultimo de alternativa" indice="C" />
-      </FormCard>
+      <h1 className='title'>Quiz Jojo's Stand</h1>
+      <div className='form-area'>
+        
+      </div>
+
     </div>
   );
 }
