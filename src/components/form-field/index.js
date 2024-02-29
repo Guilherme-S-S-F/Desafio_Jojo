@@ -4,13 +4,8 @@ import {useState} from 'react';
  export function FormField(props) {
     var [checked, setChecked] = useState(false);
 
-    const selectField = (event) => {
-        checked = (checked) ? false : true;
-        onSave(checked)
-    }
-
-    const onSave = (value) => {
-        setChecked(value);
+    const selectField = () => {
+        setChecked(!checked);
     }
 
     return(
