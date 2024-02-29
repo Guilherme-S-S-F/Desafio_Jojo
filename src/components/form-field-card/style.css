@@ -1,0 +1,13 @@
+.card {
+    background-color: rgb(193, 193, 193);
+    padding: 10px;
+    max-width: 1024px;
+}
+
+.fields {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
