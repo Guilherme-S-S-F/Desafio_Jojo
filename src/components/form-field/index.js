@@ -1,11 +1,13 @@
-import {useState} from 'react';
+import { useState } from 'react';
  import './style.css';
  
  export function FormField(props) {
-    var [checked, setChecked] = useState(false);
+    console.log(props.index,props.check)
+    var [checked, setChecked] = useState(props.check);
 
     const selectField = () => {
         setChecked(!checked);
+        props.selected(props.index);
     }
 
     return(
