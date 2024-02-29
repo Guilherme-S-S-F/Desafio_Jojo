@@ -7,7 +7,33 @@ function App() {
     <div className="App">
       <h1 className='title'>Quiz Jojo's Stand</h1>
       <div className='form-area'>
-        
+        <FormCard question="teste de pergunta e tamanho do p no card">
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+        </FormCard>
+
+        <FormCard question="teste de pergunta e tamanho do p no card">
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+        </FormCard>
+
+        <FormCard question="teste de pergunta e tamanho do p no card">
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+        </FormCard>
+
+        <FormCard question="teste de pergunta e tamanho do p no card">
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+          <FormField text="teste" index="A"/>
+        </FormCard>
       </div>
 
     </div>

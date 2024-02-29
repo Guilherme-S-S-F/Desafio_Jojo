@@ -4,8 +4,8 @@
  export function FormField(props) {
     return(
         <div className='field'>
-            <h3>{props.indice}</h3>
-            <p>{props.texto}</p>
+            <h3>{props.index}</h3>
+            <p>{props.text}</p>
             <div class="checkbox-wrapper-12">
             <div class="cbx">
                 <input id="cbx-12" type="checkbox"/>
