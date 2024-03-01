@@ -11,6 +11,6 @@ export function letterIndexToNumber(val) {
         num = 3;
     } else if (val ==="E") {
         num = 4;
-    }
+    } 
     return num;
 }

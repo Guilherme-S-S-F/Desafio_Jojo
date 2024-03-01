@@ -1,0 +1,29 @@
+#modal {
+    background-color: rgb(235, 156, 37);
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.hide{
+    display: none;
+}
+
+.see {
+    display: block;
+    position: relative  ;
+}
+
+.modal-button {
+    border: 0px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-button:hover {
+    background-color: rgb(65, 137, 56);
+    cursor: pointer;
+}
