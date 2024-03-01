@@ -14,7 +14,7 @@ function App() {
   {"name":"Mago Vermelho", "img":"magicians-red.jpg"},
   {"name":"Silver Chariot", "img":"silver-chariot.jpg"},
   {"name":"The World", "img":"the-world.jpg"},
-  {"name":"Hermit Purple", "img":"hermit-purple"},
+  {"name":"Hermit Purple", "img":"hermit-purple.jpg"},
   {"name":"Crazy Diamond", "img":"crazy-diamond.jpg"}];
 
   const [result, setResult] = useState(-1);
@@ -26,7 +26,7 @@ function App() {
 
     return (
       <div className="App">
-        <h1 className='title'>Resultado do Quiz</h1>
+        <h1 className='title'>Seu Stand:</h1>
         <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>        
       </div>
     );
@@ -48,6 +48,9 @@ function App() {
         break;
       case "E":
         setResult(4);
+        break;
+      default:
+        setResult(5);
         break;
     }
   }

@@ -60,11 +60,9 @@ function FormCard(props) {
 
 function ButtonResult(props) {
 
-    const [cardImage, setCardImage] = useState();
-
     function Calculate() {
         //calcula qual foi o elemento que mais se repetiu e armazena na variavel maxEl
-        if(props.array.length == 0)
+        if(props.array.length === 0)
             return null;
         var modeMap = {};
         var maxEl = props.array[0], maxCount = 1;
