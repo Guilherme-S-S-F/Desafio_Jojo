@@ -3,6 +3,7 @@ import StandCard from './components/StandCard';
 import { ButtonResult, FormCard } from './components/form-field-card';
 import { useState } from 'react';
 
+
 function App() {
   let arrayInit = [0,0,0];
   const setArray = (index, value) => {
@@ -33,26 +34,7 @@ function App() {
   }
 
   const onFinished = (val) => {
-    switch(val) {
-      case "A":
-        setResult(0);
-        break;
-      case "B":
-        setResult(1);
-        break;
-      case "C":
-        setResult(2);
-        break;
-      case "D":
-        setResult(3);
-        break;
-      case "E":
-        setResult(4);
-        break;
-      default:
-        setResult(5);
-        break;
-    }
+    setResult(val);
   }
   
 

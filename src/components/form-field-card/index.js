@@ -1,5 +1,6 @@
 import { FormField } from '../form-field';
 import { useState } from 'react';
+import { letterIndexToNumber } from "../Utils";
 import './style.css';
 
 function FormCard(props) {
@@ -14,25 +15,15 @@ function FormCard(props) {
     }
 
     const onSelected = (element) => {
+        element = letterIndexToNumber(element);
         setSelected(element);
         cleanSelection();
-        let num = Number(element) -1;
+        let num = element;
         states[num] = true;
         setStates(states);
+        console.log(states);
+        valor = element;
         
-
-        if (num === 0) {
-            valor = "A"
-        } else if (num === 1) {
-            valor = "B"
-        } else if (num === 2) {
-            valor = "C" 
-        } else if (num === 3) {
-            valor = "D"
-        } else if (num === 4) {
-            valor = "E"
-        }
-        console.log(valor)
         //console.log(states);
     }
 
@@ -48,11 +39,11 @@ function FormCard(props) {
             <p className="question">{props.question}</p>
 
             <div className="fields">
-                <FormField selected={e => onSelected(e)} text={props.answers[0]} check={states[0]} index="1"/>
-                <FormField selected={e => onSelected(e)} text={props.answers[1]} check={states[1]} index="2"/>
-                <FormField selected={e => onSelected(e)} text={props.answers[2]} check={states[2]} index="3"/>
-                <FormField selected={e => onSelected(e)} text={props.answers[3]} check={states[3]} index="4"/>
-                <FormField selected={e => onSelected(e)} text={props.answers[4]} check={states[4]} index="5"/>
+                <FormField selected={e => onSelected(e)} text={props.answers[0]} check={states[0]} index="A"/>
+                <FormField selected={e => onSelected(e)} text={props.answers[1]} check={states[1]} index="B"/>
+                <FormField selected={e => onSelected(e)} text={props.answers[2]} check={states[2]} index="C"/>
+                <FormField selected={e => onSelected(e)} text={props.answers[3]} check={states[3]} index="D"/>
+                <FormField selected={e => onSelected(e)} text={props.answers[4]} check={states[4]} index="E"/>
             </div>
         </div>
     );
