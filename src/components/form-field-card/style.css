@@ -10,6 +10,9 @@
     font-weight: bold;
 }
 
+.card .question {
+    font-size: 20px;
+}
 
 
 .fields {
@@ -26,8 +29,8 @@
     font-size: 20px;
     border-radius: 8px;
     outline: none;
-    border: 1px solid rgb(211, 156, 232);
-    background-color: rgb(211, 156, 232);
+    border: 1px solid #d39ce8;
+    background-color: #d39ce8;
     color: #fff;
     cursor: pointer;
     transition: all 0.5s ease;

@@ -21,15 +21,15 @@ function FormCard(props) {
         setStates(states);
         
 
-        if (num == 0) {
+        if (num === 0) {
             valor = "A"
-        } else if (num == 1) {
+        } else if (num === 1) {
             valor = "B"
-        } else if (num == 2) {
+        } else if (num === 2) {
             valor = "C" 
-        } else if (num == 3) {
+        } else if (num === 3) {
             valor = "D"
-        } else if (num == 4) {
+        } else if (num === 4) {
             valor = "E"
         }
         console.log(valor)
@@ -79,9 +79,10 @@ function ButtonResult(props) {
                 maxEl = el;
                 maxCount = modeMap[el];
             }
-    }
+        }
     
-    console.log(`O elemento mais repetido foi ${maxEl}`)
+        console.log(`O elemento mais repetido foi ${maxEl}`)
+        props.onResult(maxEl);
     }
 
     return(
