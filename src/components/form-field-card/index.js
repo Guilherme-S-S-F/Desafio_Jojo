@@ -85,7 +85,7 @@ function ButtonResult(props) {
     }
 
     return(
-        <button onClick={Calculate}>Ver resultado</button>
+        <button className='btn-result' onClick={Calculate}>Ver resultado</button>
     );
 }
 

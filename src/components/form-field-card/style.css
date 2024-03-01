@@ -20,3 +20,19 @@
     gap: 10px
 }
 
+.btn-result {
+    height: 60px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(211, 156, 232);
+    background-color: rgb(211, 156, 232);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn-result:hover {
+    font-size: 25px;
+}
+
