@@ -1,6 +1,6 @@
 import './App.css';
 import StandCard from './components/StandCard';
-import { ButtonResult, FormCard } from './components/form-field-card';
+import { ButtonRestart, ButtonResult, FormCard } from './components/form-field-card';
 import { useState } from 'react';
 import { Modal } from './components/modal';
 
@@ -47,7 +47,7 @@ function App() {
           <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
         </div>
         <div>
-          <button>REFAZER TESTE</button>
+          <ButtonRestart />
         </div>
         
       </div>
