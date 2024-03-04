@@ -3,9 +3,11 @@ import StandCard from './components/StandCard';
 import { ButtonResult, FormCard } from './components/form-field-card';
 import { useState } from 'react';
 import { Modal } from './components/modal';
+import ShareLinks from './components/ShareLinks';
+import { useParams } from 'react-router-dom';
 
 
-function App() {
+function App(prps) {
   let arrayInit = ['', '', '', '', ''];
   const setArray = (index, value) => {
     if(value === '') {
@@ -37,6 +39,11 @@ function App() {
     setModal(false)
   }
 
+  let tempStand = '';
+  // Get params from URL.
+  if(tempStand != ''){
+    result = Number(tempStand);
+  }
 
   if(!(result === -1)) {
 
@@ -45,6 +52,7 @@ function App() {
         <div className=''>
           <h1 className='title'>Seu Stand:</h1>
           <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
+          <ShareLinks stand='1'/>
         </div>
         <div>
           <button>REFAZER TESTE</button>
