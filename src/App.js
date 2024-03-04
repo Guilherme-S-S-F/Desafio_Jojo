@@ -33,6 +33,8 @@ function App(prps) {
 
   const[restarPage,setRestartPage] = useState(false);
 
+
+
   function enableModal(){
     setModal(true);
   }
@@ -41,29 +43,17 @@ function App(prps) {
     setModal(false)
   }
 
+  function resetArray(){
+    setvaluesArray(['','','','','']);
+    console.log(valuesArray)
+    setResult(-1)
+  }
   let tempStand = '';
 
   if(tempStand != '') {
     setResult(Number(tempStand));
   }
 
-
-  if(!(result === -1)) {
-
-    return (
-      <div className="App">
-        <div className=''>
-          <h1 className='title'>Seu Stand:</h1>
-          <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
-          <ShareLinks stand='1'/>
-        </div>
-        <div>
-          <button>REFAZER TESTE</button>
-        </div>
-        
-      </div>
-    );
-  }
 
   const onFinished = (val) => {
     if(valuesArray.indexOf('') >=0){
@@ -83,6 +73,7 @@ function App(prps) {
         <div className=''>
           <h1 className='title'>Seu Stand:</h1>
           <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
+          <ShareLinks stand='1'/>
         </div>
         <div>
           <button className='button-restart' onClick={resetArray}>REFAZER TESTE</button>
