@@ -65,7 +65,7 @@ function App() {
           <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
         </div>
         <div>
-          <button onClick={resetArray}>Aqui</button>
+          <button className='button-restart' onClick={resetArray}>REFAZER TESTE</button>
         </div>
         
       </div>
