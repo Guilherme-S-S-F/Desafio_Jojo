@@ -8,8 +8,12 @@ import { Modal } from './components/modal';
 function App() {
   let arrayInit = ['', '', '', '', ''];
   const setArray = (index, value) => {
-    valuesArray[index] = value;
-    setvaluesArray(valuesArray)
+    if(value == '') {
+
+    } else {
+      valuesArray[index] = value;
+      setvaluesArray(valuesArray)
+    }
   }
 
   const stands = [{name:"Star Platinum", img:"star-platinum.jpg"},
