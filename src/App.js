@@ -42,8 +42,13 @@ function App() {
 
     return (
       <div className="App">
-        <h1 className='title'>Seu Stand:</h1>
-        <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
+        <div className=''>
+          <h1 className='title'>Seu Stand:</h1>
+          <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
+        </div>
+        <div>
+          <button>REFAZER TESTE</button>
+        </div>
         
       </div>
     );
