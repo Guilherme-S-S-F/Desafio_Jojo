@@ -86,12 +86,4 @@ function ButtonResult(props) {
 }
 
 
-function ButtonRestart() {
-
-    return(
-        <button></button>
-    );
-}
-
-
-export {FormCard, ButtonResult, ButtonRestart};
+export {FormCard, ButtonResult};
