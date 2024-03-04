@@ -41,6 +41,12 @@ function App(prps) {
     setModal(false)
   }
 
+  let tempStand = '';
+
+  if(tempStand != '') {
+    setResult(Number(tempStand));
+  }
+
 
   if(!(result === -1)) {
 
@@ -49,6 +55,7 @@ function App(prps) {
         <div className=''>
           <h1 className='title'>Seu Stand:</h1>
           <div className='center'><StandCard name={stands[result].name} image={stands[result].img} /></div>
+          <ShareLinks stand='1'/>
         </div>
         <div>
           <button>REFAZER TESTE</button>
