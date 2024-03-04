@@ -8,7 +8,7 @@ import { Modal } from './components/modal';
 function App() {
   let arrayInit = ['', '', '', '', ''];
   const setArray = (index, value) => {
-    if(value == '') {
+    if(value === '') {
 
     } else {
       valuesArray[index] = value;
