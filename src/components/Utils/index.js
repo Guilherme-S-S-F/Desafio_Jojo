@@ -1,4 +1,10 @@
 
+const domain = "http://localhost:3000";
+
+export function getDomain() {
+    return domain;
+}
+
 export function letterIndexToNumber(val) {
     let num;
     if (val === "A") {

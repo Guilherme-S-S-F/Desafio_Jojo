@@ -1,6 +1,6 @@
 import { FormField } from '../form-field';
 import { useState } from 'react';
-import { letterIndexToNumber } from "../Utils";
+import { getDomain, letterIndexToNumber } from "../Utils";
 import './style.css';
 function FormCard(props) {
 
@@ -80,7 +80,7 @@ function ButtonResult(props) {
         
         result = "/result/"+maxEl;
         setStand(result);
-        window.location.replace('http://localhost:3000'+result);
+        window.location.replace(getDomain()+result);
     }
     let result = "";
     return(
