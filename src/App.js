@@ -29,8 +29,6 @@ function App() {
 
   const[modal, setModal] = useState(false);
 
-  const[restarPage,setRestartPage] = useState(false);
-
   function enableModal(){
     setModal(true);
   }
@@ -40,14 +38,13 @@ function App() {
   }
 
   const onFinished = (val) => {
+    console.log("aaaaaaaaaaaaaaa")
     if(valuesArray.indexOf('') >=0){
       enableModal()
       
     } else {
       setResult(val);
-      if(val == null) {
-        setResult(5)
-      }
+      
     }
   }
 
@@ -101,8 +98,7 @@ function App() {
         }}>
         </FormCard>
         <Modal exit={disableModal} state={modal}/>
-        <ButtonResult onResult={e => onFinished(e)} array={valuesArray} />
-          
+        <ButtonResult onResult={e => onFinished(e)} array={valuesArray} />          
   
       </div>
   

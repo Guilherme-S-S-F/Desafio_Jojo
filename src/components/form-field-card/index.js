@@ -76,11 +76,16 @@ function ButtonResult(props) {
         if (maxCount === 1) {
             maxEl = 5;
         }
-        console.log(maxEl); 
         
+        props.onResult(maxEl);
         result = "/result/"+maxEl;
-        setStand(result);
-        window.location.replace(getDomain()+result);
+        if(props.array.indexOf('') >= 0) {
+
+        } else {
+            setStand(result);
+            window.location.replace(getDomain()+result);
+            console.log("aaaaaaaaaaaaa")
+        }
     }
     let result = "";
     return(
