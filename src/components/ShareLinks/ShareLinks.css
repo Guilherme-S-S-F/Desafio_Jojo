@@ -1,0 +1,14 @@
+
+.share-container  {
+    display: flex;
+    justify-content: center;
+    align-items: ce;
+}
+
+.share-container  img {
+    width: 20px;
+}
+
+.share-container div {
+    margin: 20px;
+}

@@ -2,6 +2,7 @@ import StandCard from '../StandCard';
 import {Link, useParams} from 'react-router-dom'
 import { useState } from 'react';
 import './StandResult.css';
+import ShareLinks from '../ShareLinks';
 
 export function StandResult() {
     const stands = [{name:"Star Platinum", img:"star-platinum.jpg"},
@@ -13,10 +14,6 @@ export function StandResult() {
 
     let result = useParams()['stand'];
 
-    function restartQuiz(){
-        console.log("restart")
-      }
-
     return(
         <div className="Result">
         <div className=''>
@@ -24,9 +21,9 @@ export function StandResult() {
           <div className='center'><StandCard name= {stands[result].name} image= {stands[result].img}/></div>
         </div>
         <div>
-          <Link to={"/"}><button className='button-restart' onClick={restartQuiz}>REFAZER TESTE</button></Link>
+          <Link to={"/"}><button className='button-restart' >REFAZER TESTE</button></Link>
         </div>
-        
+        <ShareLinks stand={result}/>
       </div>
         
     );

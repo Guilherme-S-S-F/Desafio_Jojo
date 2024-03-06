@@ -2,8 +2,6 @@ import { FormField } from '../form-field';
 import { useState } from 'react';
 import { letterIndexToNumber } from "../Utils";
 import './style.css';
-import { Link } from 'react-router-dom';
-
 function FormCard(props) {
 
     const [selected, setSelected] = useState('');
@@ -51,7 +49,7 @@ function FormCard(props) {
 }
 
 function ButtonResult(props) {
-    const [stand, setStand] = useState('');
+    let [stand, setStand] = useState('');
 
     function Calculate() {
         //calcula qual foi o elemento que mais se repetiu e armazena na variavel maxEl
@@ -80,11 +78,14 @@ function ButtonResult(props) {
             console.log("nenhum elemento se repetiu")
         }
         console.log(maxEl); 
-        setStand(maxEl)
+        
+        result = "/result/"+maxEl;
+        setStand(result);
+        window.location.replace('http://localhost:3000'+result);
     }
-    let result = "/result/" + stand;
+    let result = "";
     return(
-        <Link to={result}><button className='btn-result' onClick={Calculate}>Ver resultado</button></Link>
+        <button className='btn-result' onClick={Calculate}>Ver resultado</button>
     );
 }
 
