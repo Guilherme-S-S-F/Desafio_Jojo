@@ -1,5 +1,6 @@
 import StandCard from '../StandCard';
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
+import { useState } from 'react';
 import './StandResult.css';
 
 export function StandResult() {
@@ -12,7 +13,21 @@ export function StandResult() {
 
     let result = useParams()['stand'];
 
+    function restartQuiz(){
+        console.log("restart")
+      }
+
     return(
-        <StandCard name= {stands[result].name} image= {stands[result].img}/>
+        <div className="Result">
+        <div className=''>
+          <h1 className='title'>Seu Stand:</h1>
+          <div className='center'><StandCard name= {stands[result].name} image= {stands[result].img}/></div>
+        </div>
+        <div>
+          <Link to={"/"}><button className='button-restart' onClick={restartQuiz}>REFAZER TESTE</button></Link>
+        </div>
+        
+      </div>
+        
     );
 }
