@@ -74,8 +74,7 @@ function ButtonResult(props) {
         }
         
         if (maxCount === 1) {
-            maxEl = null;
-            console.log("nenhum elemento se repetiu")
+            maxEl = 5;
         }
         console.log(maxEl); 
         
