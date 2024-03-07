@@ -1,8 +1,7 @@
 import { FormField } from '../form-field';
 import { useState } from 'react';
-import { letterIndexToNumber } from "../Utils";
+import { getDomain, letterIndexToNumber } from "../Utils";
 import './style.css';
-
 function FormCard(props) {
 
     const [selected, setSelected] = useState('');
@@ -23,8 +22,7 @@ function FormCard(props) {
         setStates(states);
         console.log(states);
         valor = element;
-        
-        //console.log(states);
+
     }
 
     const cleanSelection = () => {
@@ -50,6 +48,7 @@ function FormCard(props) {
 }
 
 function ButtonResult(props) {
+    let [stand, setStand] = useState('');
 
     function Calculate() {
         //calcula qual foi o elemento que mais se repetiu e armazena na variavel maxEl
@@ -74,12 +73,20 @@ function ButtonResult(props) {
         }
         
         if (maxCount === 1) {
-            maxEl = null;
-            console.log("nenhum elemento se repetiu")
+            maxEl = 5;
         }
+        
         props.onResult(maxEl);
-    }
+        result = "/result/"+maxEl;
+        if(props.array.indexOf('') >= 0) {
 
+        } else {
+            setStand(result);
+            window.location.replace(getDomain()+result);
+            console.log("aaaaaaaaaaaaa")
+        }
+    }
+    let result = "";
     return(
         <button className='btn-result' onClick={Calculate}>Ver resultado</button>
     );

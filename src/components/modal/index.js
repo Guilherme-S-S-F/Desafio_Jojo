@@ -2,11 +2,6 @@ import './style.css';
 
 export function Modal(props){
 
-
-    
-   
-        
-    
     return(
         <div id="modal" className={props.state? 'see': 'hide'}>
             <h3>Atenção</h3>

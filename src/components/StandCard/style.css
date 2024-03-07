@@ -1,0 +1,19 @@
+.stand-card {
+    width: 300px;
+    border-radius: 8px;
+    background-color: #d39ce8;
+    color: #fff;
+    height: 400px;
+    box-shadow: 16px 16px rgba(211, 156, 232, 0.4);
+}
+
+.stand-card .image {
+    object-fit: cover;
+}
+
+.stand-card .image img {
+    object-fit: cover;    
+    width: 300px;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+}

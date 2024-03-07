@@ -19,19 +19,3 @@ code {
     monospace;
 }
 
-.button-restart {
-  background-color: rgb(251, 190, 77);
-  border: 0px;
-  border-radius: 10px;
-  padding: 10px 15px;
-  margin: 40px 0;
-  width: 300px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.button-restart:hover {
-  background-color: greenyellow;
-}
