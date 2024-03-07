@@ -18,7 +18,7 @@ export function StandResult() {
 
     const sound = "../../sounds/" + stands[result].sound;
 
-    const [play, {stop}] = useSound(sound, {volume: 0.05});
+    const [play, {stop}] = useSound(sound, {volume: 0.1});
 
     const handleStop = () => {
       stop();
