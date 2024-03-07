@@ -22,8 +22,7 @@ function FormCard(props) {
         setStates(states);
         console.log(states);
         valor = element;
-        
-        //console.log(states);
+
     }
 
     const cleanSelection = () => {

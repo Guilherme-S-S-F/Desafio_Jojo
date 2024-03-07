@@ -1,4 +1,4 @@
-import './StandCard.css';
+import './style.css';
 
 function StandCard(props) {
     let path = "../imgs/Stands/" + props.image;

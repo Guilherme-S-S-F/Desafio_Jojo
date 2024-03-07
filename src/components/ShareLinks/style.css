@@ -1,0 +1,21 @@
+
+.share-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-container  img {
+    width: 20px;
+
+}
+
+.share-container div {
+    margin: 20px;
+}
+
+.share {
+    background-color: rgb(101, 45, 119);
+    color: white;
+    padding: 10px 0;
+}
