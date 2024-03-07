@@ -1,6 +1,5 @@
 import StandCard from '../StandCard';
 import {Link, useParams} from 'react-router-dom'
-import { useState } from 'react';
 import './style.css';
 import ShareLinks from '../ShareLinks';
 import useSound from 'use-sound';

@@ -4,7 +4,6 @@ import { ButtonResult, FormCard } from './components/form-field-card';
 import { useState } from 'react';
 import { Modal } from './components/modal';
 import ShareLinks from './components/ShareLinks';
-import { useParams } from 'react-router-dom';
 
 
 function App(prps) {

@@ -53,7 +53,6 @@ function ButtonResult(props) {
     function Calculate() {
         //calcula qual foi o elemento que mais se repetiu e armazena na variavel maxEl
         if(props.array.length === 0)
-            alert("array vazio");
     
         var modeMap = {};
         var maxEl = props.array[0];
@@ -83,7 +82,6 @@ function ButtonResult(props) {
         } else {
             setStand(result);
             window.location.replace(getDomain()+result);
-            console.log("aaaaaaaaaaaaa")
         }
     }
     let result = "";
