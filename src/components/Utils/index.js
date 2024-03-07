@@ -1,5 +1,5 @@
 
-const domain = "http://localhost:3000";
+const domain = "https://Guilherme-S-S-F.github.io/Desafio_Jojo/";
 
 export function getDomain() {
     return domain;

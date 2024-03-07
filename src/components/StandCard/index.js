@@ -1,7 +1,7 @@
 import './style.css';
 
 function StandCard(props) {
-    let path = "../imgs/Stands/" + props.image;
+    let path = "./imgs/Stands/" + props.image;
     console.log(path);
     return (
         <section className="stand-card">
