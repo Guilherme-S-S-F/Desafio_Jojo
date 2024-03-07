@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Desafio_Jojo/static/css/main.dffe90a8.css",
-    "main.js": "/Desafio_Jojo/static/js/main.607e9b9c.js",
+    "main.js": "/Desafio_Jojo/static/js/main.feba2780.js",
     "static/js/885.5c7114c0.chunk.js": "/Desafio_Jojo/static/js/885.5c7114c0.chunk.js",
     "static/media/background-jojo.jpg": "/Desafio_Jojo/static/media/background-jojo.c4818a089d9d9e065a7a.jpg",
     "index.html": "/Desafio_Jojo/index.html",
     "main.dffe90a8.css.map": "/Desafio_Jojo/static/css/main.dffe90a8.css.map",
-    "main.607e9b9c.js.map": "/Desafio_Jojo/static/js/main.607e9b9c.js.map",
+    "main.feba2780.js.map": "/Desafio_Jojo/static/js/main.feba2780.js.map",
     "885.5c7114c0.chunk.js.map": "/Desafio_Jojo/static/js/885.5c7114c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dffe90a8.css",
-    "static/js/main.607e9b9c.js"
+    "static/js/main.feba2780.js"
   ]
 }
