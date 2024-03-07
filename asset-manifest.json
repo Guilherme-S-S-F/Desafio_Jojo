@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Desafio_Jojo/static/css/main.dffe90a8.css",
-    "main.js": "/Desafio_Jojo/static/js/main.121b306f.js",
-    "static/js/885.5c7114c0.chunk.js": "/Desafio_Jojo/static/js/885.5c7114c0.chunk.js",
-    "static/media/background-jojo.jpg": "/Desafio_Jojo/static/media/background-jojo.c4818a089d9d9e065a7a.jpg",
-    "index.html": "/Desafio_Jojo/index.html",
-    "main.dffe90a8.css.map": "/Desafio_Jojo/static/css/main.dffe90a8.css.map",
-    "main.121b306f.js.map": "/Desafio_Jojo/static/js/main.121b306f.js.map",
-    "885.5c7114c0.chunk.js.map": "/Desafio_Jojo/static/js/885.5c7114c0.chunk.js.map"
+    "main.css": "/Guilherme-S-S-F/static/css/main.5ae53714.css",
+    "main.js": "/Guilherme-S-S-F/static/js/main.8f0c0a22.js",
+    "static/js/885.5c7114c0.chunk.js": "/Guilherme-S-S-F/static/js/885.5c7114c0.chunk.js",
+    "static/media/background-jojo.jpg": "/Guilherme-S-S-F/static/media/background-jojo.c4818a089d9d9e065a7a.jpg",
+    "index.html": "/Guilherme-S-S-F/index.html",
+    "main.5ae53714.css.map": "/Guilherme-S-S-F/static/css/main.5ae53714.css.map",
+    "main.8f0c0a22.js.map": "/Guilherme-S-S-F/static/js/main.8f0c0a22.js.map",
+    "885.5c7114c0.chunk.js.map": "/Guilherme-S-S-F/static/js/885.5c7114c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dffe90a8.css",
-    "static/js/main.121b306f.js"
+    "static/css/main.5ae53714.css",
+    "static/js/main.8f0c0a22.js"
   ]
 }
