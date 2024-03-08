@@ -4,7 +4,7 @@ import { ButtonResult, FormCard } from './components/form-field-card';
 import { useState } from 'react';
 import { Modal } from './components/modal';
 
-function App(prps) {
+function App() {
   let arrayInit = ['', '', '', '', ''];
   const setArray = (index, value) => {
     if(value === '') {
@@ -39,7 +39,6 @@ function App(prps) {
     }
   }
 
-  
   return (
     <div className="App">
       <h1 className='title'>Quiz Jojo's Stand</h1>

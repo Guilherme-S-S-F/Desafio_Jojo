@@ -47,7 +47,7 @@ function FormCard(props) {
 }
 
 function ButtonResult(props) {
-    let [stand, setStand] = useState('');
+
     let result = "";
 
     function Calculate() {
@@ -79,7 +79,7 @@ function ButtonResult(props) {
         if(props.array.indexOf('') >= 0) {
 
         } else {
-            setStand(result);
+            
             window.location.replace(getDomain()+result);
         }
     }
