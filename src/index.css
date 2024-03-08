@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: url("../public/imgs/background-jojo.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
 
 }
 

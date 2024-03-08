@@ -20,7 +20,6 @@ function FormCard(props) {
         let num = element;
         states[num] = true;
         setStates(states);
-        console.log(states);
         valor = element;
 
     }
@@ -76,7 +75,7 @@ function ButtonResult(props) {
         }
         
         props.onResult(maxEl);
-        result = "/result/"+maxEl;
+        result = "#result/"+maxEl;
         if(props.array.indexOf('') >= 0) {
 
         } else {
