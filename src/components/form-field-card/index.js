@@ -47,17 +47,19 @@ function FormCard(props) {
 }
 
 function ButtonResult(props) {
-    let [stand, setStand] = useState('');
+
+    let result = "";
 
     function Calculate() {
         //calcula qual foi o elemento que mais se repetiu e armazena na variavel maxEl
+        if(props.array.length === 0)
     
         var modeMap = {};
         var maxEl = props.array[0];
         var maxCount = 1;
     
-        for(var i = 0; i < props.array.length; i++) {
-            var el = props.array[i];
+        for(let i = 0; i < props.array.length; i++) {
+            let el = props.array[i];
             if(modeMap[el] == null)
                 modeMap[el] = 1;
             else
@@ -78,11 +80,11 @@ function ButtonResult(props) {
         if(props.array.indexOf('') >= 0) {
 
         } else {
-            setStand(result);
+            
             window.location.replace(getDomain()+result);
         }
     }
-    let result = "";
+    
     return(
         <button className='btn-result' onClick={Calculate}>Ver resultado</button>
     );
