@@ -3,26 +3,17 @@ import StandCard from './components/StandCard';
 import { ButtonResult, FormCard } from './components/form-field-card';
 import { useState } from 'react';
 import { Modal } from './components/modal';
-import ShareLinks from './components/ShareLinks';
-
 
 function App(prps) {
   let arrayInit = ['', '', '', '', ''];
   const setArray = (index, value) => {
     if(value === '') {
-
+      //caso o valor retorne vazio (quando clica dentro do container e ativa o onclick) ele não substitui
     } else {
       valuesArray[index] = value;
       setvaluesArray(valuesArray)
     }
   }
-
-  const stands = [{name:"Star Platinum", img:"star-platinum.jpg"},
-  {name:"Mago Vermelho", img:"magicians-red.jpg"},
-  {name:"Silver Chariot", img:"silver-chariot.jpg"},
-  {name:"The World", img:"the-world.jpg"},
-  {name:"Hermit Purple", img:"hermit-purple.jpg"},
-  {name:"Crazy Diamond", img:"crazy-diamond.jpg"}];
 
   const [result, setResult] = useState(-1);
   
@@ -39,7 +30,6 @@ function App(prps) {
   }
 
   const onFinished = (val) => {
-    console.log("aaaaaaaaaaaaaaa")
     if(valuesArray.indexOf('') >=0){
       enableModal()
       
@@ -59,7 +49,6 @@ function App(prps) {
           question="Qual sua Cor favorita?"
           selected={(e) => {
             setArray(0, e)
-            console.log(valuesArray)
           }}>
         </FormCard>
   
@@ -68,7 +57,6 @@ function App(prps) {
           question="Escolha um poder:"
           selected={(e) => {
             setArray(1, e)
-            console.log(valuesArray)
           }}>
         </FormCard>
   
@@ -77,7 +65,6 @@ function App(prps) {
           question="Escolha um prato"
           selected={(e) => {
             setArray(2, e)
-            console.log(valuesArray)
           }}>
         </FormCard>
   
@@ -86,7 +73,6 @@ function App(prps) {
         question="Escolha uma estação"
         selected={(e) => {
           setArray(3, e)
-          console.log(valuesArray)
         }}>
         </FormCard>
   
@@ -95,7 +81,6 @@ function App(prps) {
         question="Você se considera uma pessoa mais:"
         selected={(e) => {
           setArray(4, e)
-          console.log(valuesArray)
         }}>
         </FormCard>
         <Modal exit={disableModal} state={modal}/>
