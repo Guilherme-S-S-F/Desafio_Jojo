@@ -52,7 +52,6 @@ function ButtonResult(props) {
 
     function Calculate() {
         //calcula qual foi o elemento que mais se repetiu e armazena na variavel maxEl
-        if(props.array.length === 0)
     
         var modeMap = {};
         var maxEl = props.array[0];
